@@ -50,9 +50,6 @@ var app = app || {};
 				return;
 			}
 
-			//test
-			console.log(this.model.toJSON())
-			// end test
 			this.$el.html(this.template(this.model.toJSON()));
 			this.$el.toggleClass('completed', this.model.get('completed'));
 			this.$el.toggleClass('priority', this.model.get('priority'));
